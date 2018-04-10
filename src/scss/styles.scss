@@ -1,14 +1,15 @@
 $textColor: #665f60;
 $bgColor: #ebebeb;
+
 @mixin social() {
-	display: inline-block;
+	list-style-type: none;
 	height: 25px;
 	width: 25px;
-	border-radius: 50px;
+	border-radius: 50%;
 	background-color: rgba(235,235,235,.9);
 	position: relative;
 	transition: all .25s ease;
-	padding-top: 10px;
+	// padding-top: 10px;
 	& svg {
 
   			position: absolute;
@@ -24,6 +25,7 @@ $bgColor: #ebebeb;
 			opacity: 0.5;
 		}
 }
+
 @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 
 
@@ -208,6 +210,12 @@ body {
 		.carousel-control-next {
 			right: -30%;
 		}
+		.carousel-control-prev-icon {
+  			background-image: url("../img/arrow-left.png");
+		}
+		.carousel-control-next-icon {
+		  background-image: url("../img/arrow-right.png");
+		}
 		.carousel-indicators li {
 			border: 2px solid $bgColor;
 			width: 10px;
@@ -242,56 +250,49 @@ body {
 	color: $textColor;
 	padding: 55px 100px;
 	text-align: center;
+
 		img {
 			padding-bottom: 20px;
 		}
-
-	&__card {
+	.col {
+		padding-bottom: 50px;
 		
-		position: relative;
 	}
-	&__avatar {
+	// .card-deck{
+	// 	overflow: hidden;
+	// }
 
-		width: 70%;
-		height: 70%;
-		position: absolute;
-		overflow: hidden;
-		top: -31%;
-		left: 15%;
-		z-index: 30;
-		img {
-			width: 100%;
-			height: 100%;
-			position: absolute;
-			left: 50%;
-			top: 50%;
-			transform: translate(-50%, -50%);
-		}
+	.card {
+		min-width: 300px;
+		border-color: $bgColor;
+		background: linear-gradient($bgColor 20%,  #fff 20%);
+		
 	}
-	&__body {
-		height: 355px;
+	.card-img-top {
+
+	}
+	.card-body {
+		height: 280px;
+
 		background-color: #fff;
-		padding: 165px 0 0;
-		margin: 100px 0 0;
-		position: relative;
+		
 	}
-	&__name {
+	.card-title {
 		color: #9f9acf;
 		font-size: 24px;
-		display: block;
-		text-transform: uppercase;
-		margin: 0 0 30px 0;
-		padding: 0 50px 0;
+		padding-top: 10px;
+		padding-bottom: 35px;
+		
+		
 	}
-	&__position {
+	.card-text {
 		color: $textColor;
 		font: 400 24px/1 'PT Sans', Arial, sans-serif;
 		font-style: italic;
-		display: block;
-		padding: 0 50px 0;
+
 	}
-	&__sl {
-		
+	.card-footer {
+		height: 75px;
 		background-color: #9f9acf;
 		position: absolute;
 		bottom: 0;
@@ -299,26 +300,46 @@ body {
 		right: 0;
 		padding-top: 20px;
 	}
-	&__sicials {
-		display: inline-block;
+	.sicials {
 		background-color: #9f9acf;
-		width: 100%;
-		margin-top: 10px;
-		margin-right: 0;
-		margin-left: 0;
-		
 	}
-	&__social {
+	.social {
 
 		@include social();
 		margin-right: 15px;
   		
 	}
-}
+	#carouselExampleControls {
+		.carousel-item {
+  		// 	position: relative;
+ 			// display: none;
+  		// 	align-items: center;
+  			width: 30%;
+  		}
+  		.carousel-control-prev,
+		.carousel-control-next {
+
+		}
+		.carousel-control-prev {
+			left: -3%;
+		}
+		.carousel-control-next {
+			right: -3%;
+		}
+		.carousel-control-prev-icon {
+  			background-image: url("../img/prev-icon.png");
+		}
+		.carousel-control-next-icon {
+		  background-image: url("../img/next-icon.png");
+		}
+		
+			}
+		}
 
 	.contact {
 		width: 100%;
 		height: 100vh;
+		overflow: hidden;
 		.p-0 {
 			position: relative;
 			height: 100vh;
@@ -339,6 +360,73 @@ body {
 			opacity: 0.5;
 			z-index: 2;
 		}
+		.address,
+		.phone {
+			width: 340px;
+			height: 90px;
+			display: flex;
+			position: absolute;
+			right: -255px;
+			z-index: 10;
+			
+			&:hover,
+			&:active,
+			&:focus {
+				transform: translate(-255px, 0px) scale(1.0, 1.0) skew(0deg) rotate(0deg); 
+				transition: 1s ease-in;
+			}
+		}
+
+		.address {
+			top: 100px;
+			
+		}
+
+		.phone {
+			top: 190px;
+		}
+
+		.image {
+				width: 90px;
+				height: 90px;
+				background-color: #9f9acf;
+				background-image: url("../img/address.png");
+		  		background-position: center;
+		  		background-repeat: no-repeat;
+		  		display: inline-block;
+
+
+		  		&--phone {
+		  			background-image: url("../img/phone.png");
+		  		}
+		  		&--arrow {
+		  			opacity: 0.7;
+		  			background-image: url("../img/arrow.png");
+		  			position: absolute;
+					right: 0;
+					bottom: 0;
+					transform: translate(-100%, -50%);
+					z-index: 10;
+					&:hover,
+					&:active,
+					&:focus {
+						opacity: 1;
+					}
+		  		}
+			}
+
+		.information {
+				width: 260px;
+				height: 100%;
+				color: $textColor;
+				font: 200 18px/1.2 'PT Sans', Arial, sans-serif;
+				text-transform: capitalize;
+				display: inline-block;
+				padding: 10px 30px;
+				background-color: #fff;
+				opacity: 0.5;
+
+			}
 		.form-wrapper {
 			width: 70%;
 			height: 100%;
@@ -351,6 +439,7 @@ body {
 			display: flex;
 			.up .col {
 				text-align: center;
+
 				h3 {
 					padding-top: 10px;
 					color: white;
@@ -418,73 +507,13 @@ body {
 			&__socials {
 			    list-style-type: none;
 			    width: 100%;
-			    position: relative;
+			    // position: relative;
 			   
 		}
 		&__social {
 		@include social();
+		margin-right: 15px;
 		}
 	}
 }
 
-// .address,
-// .phone {
-// 	width: 350px;
-// 	height: 90px;
-// 	display: flex;
-// 	position: absolute;
-// 	right: -255px;
-// 	&:hover,
-// 	&:active,
-// 	&:focus {
-// 		transform: translate(-255px, 0px) scale(1.0, 1.0) skew(0deg) rotate(0deg); 
-// 		transition: 1s ease-in;
-// 	}
-// }
-
-// .address {
-// 	top: 200px;
-// }
-
-// .phone {
-// 	top: 290px;
-// }
-
-// .image {
-// 		width: 90px;
-// 		height: 90px;
-// 		background-color: #9f9acf;
-// 		background-image: url("../img/address.png");
-//   		background-position: center;
-//   		background-repeat: no-repeat;
-//   		display: inline-block;
-//   		&--phone {
-//   			background-image: url("../img/phone.png");
-//   		}
-//   		&--arrow {
-//   			opacity: 0.7;
-//   			background-image: url("../img/arrow.png");
-//   			position: absolute;
-// 			right: 0;
-// 			bottom: 0;
-// 			transform: translate(-100%, -50%);
-// 			&:hover,
-// 			&:active,
-// 			&:focus {
-// 				opacity: 1;
-// 			}
-//   		}
-// 	}
-
-// .information {
-// 		width: 260px;
-// 		height: 100%;
-// 		// color: #9f9acf;
-// 		text-transform: capitalize;
-// 		font-size: 18px;
-// 		font-weight: 200;
-// 		display: inline-block;
-// 		padding: 10px 30px;
-// 		background-color: #fff;
-// 		opacity: 0.5;
-// 	}

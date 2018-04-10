@@ -25,7 +25,7 @@
 	<header class="header" id="home">
 		<div class="container">
 			<nav class="navbar bg-faded navbar-dark navbar-expand-lg fixed-top">
-  				<a class="navbar-brand" href="#">
+  				<a class="navbar-brand scrollTo" href="#home">
   					<svg width="70" height="80">
 						<use xlink:href="#logo"></use>
 					</svg>
@@ -61,7 +61,7 @@
  				nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
 			</div>
 		</div>
-		</div>
+		<!-- </div> -->
 	</header>
 	<main class="main">
 		<section id="about">
@@ -76,7 +76,7 @@
 					<div class="col-md-7 text-center d-flex flex-column justify-content-center align-items-center">
 						<p class="text-left">Nullam quis risus eget urna <span class="font-weight-bold">mollis ornare</span>  vel eu leo. Donec id elit non mi porta gravida at eget metus. Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
 						<p class="text-left"><span class="font-weight-bold">Morbi leo risus,</span>  porta ac consectetur ac, vestibulum at eros. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet <span class="font-italic">fermentum.</span> Sed posuere consectetur est at lobortis.</p>
-						<button href="#" class="btn btn-outline-dark">Learn more</button>
+						<button  class="btn btn-outline-dark">Learn more</button>
 					</div>
 				</div>
 			</div>
@@ -182,164 +182,169 @@
 		</section>
 		<section class="team" id="team">
 			<div class="container">
-			<div class="row slider-description">
-				<div class="col text-center">
-					<img src="img/icon-team.png" alt="" >
-					<h3 class="text-center text-uppercase">MEET OUR TEAM</h3>
+				<div class="row ">
+					<div class="col text-center">
+						<img src="img/icon-team.png" alt="" >
+						<h3 class="text-center text-uppercase">MEET OUR TEAM</h3>
+					</div>
 				</div>
+				<div class="row justify-content-center">
+				<div class="col-md-12">
+				
+				<div id="carouselExampleControls" class="carousel slide slide-team" data-ride="carousel">
+					<div class="card-deck carousel-inner justify-content-center " role="listbox">
+  						<div class="card   d-flex flex-column col-md-3 carousel-item">
+  							<img class="card-img-top" src="img/Layer1.png" alt="Card image cap">
+  							<div class="card-body">
+  								<h5 class="card-title text-uppercase">Miguel Obrien</h5>
+  								<p class="card-text">CEO & Founder</p>
+  						  	</div>
+  						  	<div class="card-footer">
+  					    		<ul class="socials row justify-content-center">
+    								<li class="social">
+    									<a href="#">
+    										<svg width="70%" height="70%">
+												<use xlink:href="#linkedin"></use>
+											</svg>
+    									</a>
+    								</li>
+									<li class="social">
+    									<a href="#">
+    									  	<svg width="70%" height="70%">
+												<use xlink:href="#google"></use>
+											</svg>
+    									</a>
+    								</li>
+    								<li class="social">
+    									<a href="#">
+    									 	<svg width="70%" height="70%">
+												<use xlink:href="#facebook"></use>
+											</svg>
+    									</a>
+    								</li>
+    								<li class="social">
+    									<a href="#">
+    										<svg width="70%" height="70%">
+												<use xlink:href="#twitter"></use>
+											</svg>
+    									</a>
+    								</li>
+    							</ul>
+  					  		</div>
+  					    </div>
+  						<div class="card   d-flex  flex-column  col-md-3 carousel-item">
+  					  		<img class="card-img-top" src="img/Layer2.png" alt="Card image cap">
+  					  		<div class="card-body">
+  								<h5 class="card-title text-uppercase">Jackie Carroll</h5>
+  					    		<p class="card-text">Art Director</p>
+  					  		</div>
+  					  		<div class="card-footer">
+  					  			<ul class="socials row justify-content-between align-items-center">
+  					  				<li class="social">
+    									<a href="#">
+    										<svg width="70%" height="70%">
+												<use xlink:href="#behance"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    									<a href="#">
+    										<svg width="70%" height="70%">
+												<use xlink:href="#linkedin"></use>
+											</svg>
+    									</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#google"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#facebook"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#twitter"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    							</ul>
+  					  		</div>
+  						</div>
+  						<div class="card  d-flex flex-column col-md-3 carousel-item">
+  					  		<img class="card-img-top" src="img/Layer3.png" alt="Card image cap">
+  					  		<div class="card-body">
+  					    		<h5 class="card-title text-uppercase">Ida Morrison</h5>
+  					    		<p class="card-text">Designer</p>
+  					  		</div>
+  							<div class="card-footer">
+								<ul class="socials row justify-content-between align-items-center">
+									<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#behance"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#linkedin"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#google"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#facebook"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    								<li class="social">
+    								  	<a href="#">
+    								  		<svg width="70%" height="70%">
+												<use xlink:href="#twitter"></use>
+											</svg>
+    								  	</a>
+    								</li>
+    							</ul>
+  					 		 </div>
+  						</div>
+
+
+
+
+  						
+  						
+				    </div>
+				    <a class="carousel-control-prev col-md-1" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  						<span class="sr-only">Previous</span>
+  					</a>
+  					<a class="carousel-control-next col-md-1" href="#carouselExampleIndicators" role="button" data-slide="next">
+  					  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  					  <span class="sr-only">Next</span>
+  					</a>
+				</div>
+
+			</div> </div>
 			</div>
-				<div class="row">
-					<div class="col-md-4">
-						<div class="team__card">
-							<div class="team__avatar">
-								<img src="img/Layer1.png" alt="">
-							</div>
-							<div class="team__body">
-								<span class="team__name">Miguel Obrien</span>
-								<span class="team__position">CEO & Founder</span>
-								<div class="team__sl">
-    								<ul class="team__socials justify-content-center">
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#google"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#facebook"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#twitter"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="team__card">
-							<div class="team__avatar">
-								<img src="img/Layer2.png" alt="">
-							</div>
-							<div class="team__body">
-								<span class="team__name">Jackie Carroll</span>
-								<span class="team__position">Art Director</span>
-								<div class="team__sl">
-									<ul class="team__socials justify-content-between">
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#behance"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#google"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#facebook"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#twitter"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4">
-						<div class="team__card">
-							<div class="team__avatar">
-								<img src="img/Layer3.png" alt="">
-							</div>
-							<div class="team__body">
-								<span class="team__name">Art Director</span>
-								<span class="team__position">Designer</span>
-								<div class="team__sl">
-									<ul class="team__socials">
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#behance"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#linkedin"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#google"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#facebook"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								  <li class="team__social">
-    								  	<a href="#">
-    								  		<svg width="70%" height="70%">
-												<use xlink:href="#twitter"></use>
-											</svg>
-    								  	</a>
-    								  </li>
-    								</ul>
-    							</div>
-							</div>
-						</div>
-					</div>
-				</div>			
-		<!-- </div>
-	</div> -->
-
-
-
-
 		</section>
+
 	</main>
 	<section class="contact" id="contact">
 		<div class="container-fluid p-0">
@@ -358,20 +363,20 @@
 								<form>
 									<div class="form-group row">
 									  <div class="col">
-										<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+										<input type="email" class="form-control font-italic" id="inputEmail3" placeholder="Email*">
 									  </div>
 									  <div class="col">
-										<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+										<input type="password" class="form-control font-italic" id="inputPassword3" placeholder="Password*">
 									  </div>
 									</div>
 									<div class="form-group row">
 									  	<div class="col">
-									  		<textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+									  		<textarea name="message" class="font-italic" id="message" cols="30" rows="10" placeholder="Your message*"></textarea>
 									  	</div>
 									</div>
 									<div class="form-group row">
 									  	<div class="col-md-12 text-center ">
-									  		<button class="btn-info transition">send message</button>
+									  		<button class="btn-info transition" id="send">send message</button>
 									  	</div>
 									</div>
 									
@@ -382,23 +387,25 @@
 					</div>
 				</div>
 			</div>
-		<!-- 	<div class="address">
-        <div class="image"></div>
-        <div class="information text-center">ikan piranha atac 270%C malang - east java indonesia </div>
-      </div>
-      <div class="phone">
-        <div class="image image--phone"></div>
-        <div class="information text-center">+6281235966914</div>
-      </div>
-      <a href="#" onclick="return up()" class="anchor"><div class="image image--arrow transition"></div></a>
-		</div> -->
+			<div class="address">
+        		<div class="image"></div>
+        		<div class="information text-center">ikan piranha atac 270%C malang - east java indonesia </div>
+      		</div>
+      		<div class="phone">
+        		<div class="image image--phone"></div>
+        		<div class="information text-center">+6281235966914</div>
+      		</div>
+      		<a href="#" onclick="return up()" class="anchor"><div class="image image--arrow transition"></div></a>
+		</div>
+
+		<a href="#home" class="btn-top scrollTo"></a>
 	</section>
 	
 	<footer class="footer">
 	<div class=" container-fluid row justify-content-between align-items-center ">
       <div class="col-md-6 footer__text">©2014 <span class="font-weight-bold">tulus</span>driyo. All Rights Reserved.</div>
-      <div class="footer__social-cont col-md-3">
-        <ul class="socials d-flex  row justify-content-between">
+      <div class="footer__social-cont ">
+        <ul class="socials d-flex  justify-content-between">
           <li class="footer__social">
     	 	<a href="#">
     	  		<svg width="70%" height="70%">
@@ -406,28 +413,28 @@
 				</svg>
     	  	</a>
     	  </li>
-    	  <li class="team__social ">
+    	  <li class="footer__social ">
     	  	<a href="#">
     	  		<svg width="70%" height="70%">
 					<use xlink:href="#linkedin"></use>
 				</svg>
     	  	</a>
     	  </li>
-    	  <li class="team__social ">
+    	  <li class="footer__social ">
     	  	<a href="#">
     	  		<svg width="70%" height="70%">
 					<use xlink:href="#google"></use>
 				</svg>
     	  	</a>
     	  </li>
-    	  <li class="team__social ">
+    	  <li class="footer__social ">
     	  	<a href="#">
     	  		<svg width="70%" height="70%">
 					<use xlink:href="#facebook"></use>
 				</svg>
     	  	</a>
     	  </li>
-    	  <li class="team__social">
+    	  <li class="footer__social">
     	  	<a href="#">
     	  		<svg width="70%" height="70%">
 					<use xlink:href="#twitter"></use>
@@ -439,6 +446,24 @@
     </div>	
 		
 	</footer>
+	<!-- <div class="modal" id="myModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+	    		<div class="modal-header">
+	    			<h5 class="modal-title"></h5>
+	    			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        			<span aria-hidden="true">&times;</span>
+	    			</button>
+	    		</div>
+	    		<div class="modal-body">
+	    			<p></p>
+	    		</div>
+	    		<div class="modal-footer">
+	    			<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+				</div>
+			</div>
+		</div>
+	</div> -->
 	<svg style="display: none;">
 		<symbol id="logo" viewBox="0 0 53.531 72">
 			<defs>
